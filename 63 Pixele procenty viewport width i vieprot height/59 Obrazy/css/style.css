@@ -1,0 +1,28 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-size: 36px;
+	font-family: 'Roboto', sans-serif;
+	background-color: #333;
+	color: #fff;
+}
+
+.box{
+	width: 50%;
+	height: 600px;
+	background-color: green;
+}
+
+p{
+	padding: 20px;
+}
+/* PROCENTY ZAWSZE SĄ OBLICZNA NA PODSTAWIE RODZICA  */
+.inside{
+	width: 50%;
+	height: 300px;
+	background-color: rgb(27, 47, 112);
+}
