@@ -1,0 +1,24 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-size: 36px;
+	font-family: 'Roboto', sans-serif;
+	background-color: #333;
+}
+
+.square{
+	width: 550px;
+	height: 300px;
+	background-color: royalblue;
+
+	border:10px solid gold;
+	border:10px dotted gold;
+	border:10px dashed gold;
+
+	border-top-left-radius:50%;
+	border-bottom-right-radius:50%;
+}
