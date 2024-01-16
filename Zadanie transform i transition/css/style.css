@@ -1,0 +1,53 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-family: 'Times New Roman', Times, Baskerville, Georgia, serif;
+	background-color: #333;
+}
+
+div {
+	border: 2px solid black;
+}
+
+.long {
+	background-color: tomato;
+	position: absolute;
+	width: 800px;
+	height: 60px;
+	top: 50px;
+	left: calc(50% - 400px);
+	transition: scale 0.3s, width 0.6s;
+}
+
+.long:hover {
+	scale: 1.2;
+	background-color: yellow;
+	width: 400px;
+	transform: translate(50%, 50%);
+}
+
+.short {
+	background-color: royalblue;
+	width: 300px;
+	position: absolute;
+	height: 60px;
+	top: 180px;
+	left: calc(50% - 150px);
+	border-radius: 25px;
+}
+
+.short2 {
+	background-color: yellow;
+}
+
+.short3 {
+	background-color: green;
+}
+
+.center {
+	background: none;
+}
