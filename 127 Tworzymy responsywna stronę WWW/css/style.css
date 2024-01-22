@@ -1,65 +1,242 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 
-body{
-    font-family: 'Open Sans', sans-serif;
+html{
+    scroll-behavior: smooth;
 }
 
-nav{
-    height: 60px;
-    line-height: 60px;
-    background-color: #ddd;
+body {
+	font-family: 'Open Sans', sans-serif;
+   
+}
+
+section{
+    scroll-margin-top: 60px;
+}
+
+.wrapper {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1200px;
+}
+
+.hero-bg {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.7);
+}
+
+.hero-text {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: #fff;
+}
+
+.hero-text h1 {
+	margin-bottom: 5px;
+	text-shadow: 3px 6px 5px black;
+	color: #ddd;
+}
+
+.hero-text span {
+	text-transform: uppercase;
+	color: gold;
+}
+
+.section-title{
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    text-align: center;
+}
+/* NAWIGACJA */
+nav {
+	height: 60px;
+	line-height: 60px;
+	background-color: #ddd;
+	text-align: center;
+    top:0;
+    position: sticky;
+    z-index: 19;
+}
+
+.burger-icon {
+	display: block;
+	margin-left: auto;
+	padding: 0 30px;
+	line-height: 60px;
+	font-size: 30px;
+	background: none;
+	border: none;
+	cursor: pointer;
+}
+.burger-icon:hover {
+	color: gold;
+}
+
+.nav-items {
+	display: none;
+
+}
+
+/* HEADER */
+
+.header {
+	position: relative;
+	height: 330px;
+	background-image: url('../img/landscape-small.jpg');
+	background-size: cover;
+	background-position-y: 80%;
+}
+
+/* MAIN */
+
+main{
+    margin: 60px 0;
+
+}
+
+/* O NAS */
+.about-us-info{
+    margin-bottom: 10px;
+padding: 0 20px;
+}
+
+/* PRODUKTY */
+.products{
+    margin: 60px auto;
+}
+
+.product h3{
+    text-transform: uppercase;
+    transition: scale .6s;
+}
+
+.product:hover h3{
+    scale:1.6;
+
+}
+
+.first-product{
+    position: relative;
+    height: 300px;
+    background-image: url('../img/children.jpg');
+    background-size: cover;
+    background-position: center;
     text-align: center;
 }
 
-.wrapper{
-    margin: 0 auto;
-    width: 100%;
-    max-width: 1200px;
+.second-product{
+    position: relative;
+    height: 300px;
+    background-image: url('../img/keyboard.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+.third-product{
+    position: relative;
+    height: 300px;
+    background-image: url('../img/woman.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+.four-product{
+    position: relative;
+    height: 300px;
+    background-image: url('../img/laptop.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+/* KONTAKT */
+.contact{
+    text-align: center;
 
 }
 
-.burger-icon{
-    display: block;
-    margin-left: auto;
-    padding: 0 30px;
-    line-height: 60px;
-    font-size: 30px;
-    background: none;
-    border:none;
-    cursor: pointer;
-}
-.burger-icon:hover{
-    color:gold;
-}
 
-.nav-items{
-    display: none;
+
+.contact h3{
+margin: 20px 0 5px;
+    text-transform: uppercase;
+}
+/* FOOTER */
+footer{
+    padding: 30px 10px;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: #ddd;
 }
 
-@media (min-width:768px){
-    .burger-icon{
-        display: none;
-    }
 
-    .nav-items{
-        display: block;
-    }
 
-    .nav-items a{
-        padding: 0 30px;
-        text-decoration: none;
-        text-transform: uppercase;
-        font-weight: bold;
-        color: #333;
-        transition: color .3s;
+@media (min-width: 768px) {
+	.burger-icon {
+		display: none;
+	}
+
+	.nav-items {
+		display: block;
+	}
+
+	.nav-items a {
+		padding: 0 30px;
+		text-decoration: none;
+		text-transform: uppercase;
+		font-weight: bold;
+		color: #333;
+		transition: color 0.3s;
+	}
+
+	.nav-items a:hover {
+		color: gold;
+	}
+
+	.header {
+		position: relative;
+		height: 400px;
+		background-image: url('../img/landscape-big.jpg');
+	}
+
+	.hero-text h1 {
+		font-size: 36px;
+	}
+	.hero-text p {
+		font-size: 18px;
+	}
+
+    .product h3{
+        font-size: 24px;
     }
-    
-    .nav-items a:hover{
-       color:gold;
-    
+}
+
+@media (min-width: 992px) {
+.products-box{
+    font-size: 0;
+}
+
+    .product{
+        display: inline-block;
+        width:50%;
     }
+}
+
+@media (min-width: 1200px) {
+	.hero-text h1 {
+		font-size: 42px;
+	}
+
+	.hero-text p {
+		font-size: 20px;
+	}
 }
