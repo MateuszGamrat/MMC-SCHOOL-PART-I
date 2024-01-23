@@ -8,6 +8,7 @@ body {
 	background-color: #333;
 	height: 100vh;
 	color: #fff;
+	font-size: 16px;
 }
 
 .image {
@@ -19,16 +20,13 @@ body {
 	left: 50%;
 	transform: translate(-50%, -50%) rotate(45deg);
 	transition: transform cubic-bezier(0.215, 0.61, 0.355, 1) 1s, color 1s 1s;
-
 }
 
-.image-bg{
+.image-bg {
 	width: 100%;
 	height: 100%;
-	background-color: rgba(0, 0, 0, .8);
+	background-color: rgba(0, 0, 0, 0.8);
 }
-
-
 
 .image-text {
 	text-transform: uppercase;
