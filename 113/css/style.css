@@ -1,0 +1,35 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Times New Roman', Times, serif;
+	background-color: #333;
+	height: 100vh;
+
+}
+
+.square{
+	width: 50%;
+	height: 50%;
+	margin: 300px auto;
+	background-color: royalblue;
+	border: 3px solid black;
+	border-radius: 25px;
+
+}
+
+
+@media (min-width:600px){
+	.square{
+		background-color: gold;
+	}
+}
+
+@media (min-width:1200px){
+	.square{
+		background-color: tomato;
+	}
+}
